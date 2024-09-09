@@ -1,0 +1,42 @@
+.buy {
+    background-color: black;
+    color:white;
+}
+ul {
+    border: 1px double black;
+}
+abbr {
+    text-decoration: none;
+}
+.upgrade0{
+    background-color:red;
+}
+.upgrade1{
+    background-color:orange;
+}
+.upgrade2{
+    background-color:yellow;
+}
+.upgrade3{
+    background-color:green;
+}
+.upgrade4{
+    background-color:lightblue;
+}
+.upgrade5{
+    background-color:purple;
+    color:white;
+}
+.upgrade6{
+    background-color:pink;
+}
+.upgrade7{
+    background-color:burlywood;
+}
+.upgrade8{
+    background-color:black;
+    color:white;
+}
+.upgrade9{
+    background-color: white;
+}
