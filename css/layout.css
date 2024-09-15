@@ -1,0 +1,26 @@
+.sides {
+    width: 24%;
+    overflow-y: scroll;
+}
+.middle {
+    width: 48%;
+    overflow-y: scroll;
+}
+.buyables-container{
+    height: auto;
+    border: 2px dotted red;
+    display: inline-block;
+}
+.separator {
+    width: 1%;
+    background: blueviolet;
+}
+div {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+ol {
+    border: 2px dashed orangered;
+}

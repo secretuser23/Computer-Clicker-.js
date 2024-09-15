@@ -4,18 +4,39 @@
         <title> Cat ClickR.JS</title>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/layout.css" />
     </head>
     <body>
-        <img src="images/keyboard.png" width=100 height=100 id="keyboard" onclick="type()"/>
-        <button id="buyNewMouse" class="buy" onclick="buyNewMouse()"><abbr title='Earns 0 on click, buy 1 to get it rolling!'>New Mouse (15 b)</abbr></button>
-        <button id="simpleAIButton" class="buy" onclick="buySimpleAI()"><abbr title='Earns 0 per second, buy 1 to get it rolling!'>Simplistic AI (100 b)</abbr></button>
-        <button id="upgradeMemory" class="buy" onclick="buyMemUp()">Buy Memory Upgrade (1000b => 1000000 b)</button>
-        <p id="bytesAmount">Click the keyboard to get started!</p>
-        <p id="maxSpace"> Maximum: 1000 b</p>
-        <noscript>To play this game, turn your JavaScript on.</noscript>
-        <ul id="upgradesOl">
-            <li> Upgrades: </li>
-        </ul>
+        <div class="sides">
+            <img src="images/key.bmp" width="100" height="100" id="key" onclick="type()" />
+            <h1 id="bytesAmount" >Click the keyboard to get started!</h1>
+            <h2 id="maxSpace" > Maximum: 1000 b</h2>
+            <br />
+            <br />
+            <p>Errors:</p>
+            <ol id="errorList">
+            </ol>
+        </div>
+        <div class="separator"></div>
+        <div class="middle">
+            <noscript>To play this game, turn your JavaScript on.</noscript>
+            <div class="bought-items" id="bought-items-container">
+                This is where you can see all the things that you have bought.
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="sides">
+            <div class="buyables-container" >
+                Buyables: 
+                <button id="buyNewMouse" class="buy" onclick="buyNewMouse()" title='Earns 0 on click, buy 1 to get it rolling!'><img src="images/upgrade0-9.bmp"/> <h2>New Mouse (16 b)</h2></button>
+                <button id="simpleAIButton" class="buy" title='Earns 0 per second, buy 1 to get it rolling!' onclick="buySimpleAI()"><img src='images/upgrade10-19.bmp'><h2>Simplistic AI (128 b)</h2></button>
+                <button id="moreAdvancedAIButton" class="buy" title='Earns 0 per second, buy 1 to get it rolling!' onclick="buyMoreAdvancedAI()"><img src='images/upgrade20-29.bmp'><h2>More Advanced AI (1024 b)</h2></button>
+            </div>
+            <div class="upgrades-container" >
+                Upgrades:
+                <button id="upgradeMemory" class="upgradeUnk" onclick="buyMemUp()" title="Buy Memory Upgrade (1000b => 1000000 b)"><img src="images/memup.bmp" /></button>
+            </div>
+        </div>
         <script src="js/upgrades.js"></script>
         <script src="js/interval.js"></script>
         <script src="js/main.js"></script>

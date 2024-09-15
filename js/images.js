@@ -1,0 +1,1 @@
+keyboardImage.addEventListener("click",)

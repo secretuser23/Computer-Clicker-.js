@@ -1,5 +1,5 @@
 .buy {
-    background-color: black;
+    background-color: rgb(199, 199, 199);
     color:white;
 }
 ul {
@@ -39,4 +39,8 @@ abbr {
 }
 .upgrade9{
     background-color: white;
+}
+.upgradeUnk{
+    background-color:white;
+    
 }
